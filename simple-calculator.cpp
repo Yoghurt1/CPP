@@ -1,7 +1,7 @@
 /*
 Simple calculator program
 Licensed under GNU General Public License 3.0
-
+Credit to github.com/DanTheManRM for bork variable :^)
 
 Changelog
   V1.0 - Original program
