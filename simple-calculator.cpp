@@ -1,6 +1,9 @@
 /*
 Simple calculator program
 Licensed under GNU General Public License 3.0
+
+Changelog
+  V1.0 - Original program
 */
 
 #include <iostream>
