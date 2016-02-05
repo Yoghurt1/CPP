@@ -12,7 +12,7 @@ using namespace std;
 int main()
 {
   int number1, number2, answer; //Initialize integers number1 and number2
-  std::string function; //Initialize string operator
+  std::string function; //Initialize string for operator
   cout << "Enter an equation:\n"; //Asks user to input 2 numbers
   cin >> number1 >> function >> number2; //Sets number1, operator and number2 to equation, use spaces my dood ;^)
 
