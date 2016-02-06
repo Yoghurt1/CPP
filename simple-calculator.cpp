@@ -8,6 +8,7 @@ Changelog
   V2.0 - Added functionality for restarting the program if the user enters an invalid equation or if the user wants to enter another equation.
   V3.0 - Added cinCheck() function to check if the input for number1 and number2 was int only.
   V3.1 - Added restart functionality at the end of the program.
+  V3.1.1 - Spelling doode :^)
 */
 
 #include <iostream>
@@ -31,7 +32,7 @@ int main()
   std::string function; //Initialize string for operator and restarting the program
 
   if (restart != "y") { //Ensures this only displays first time the program runs
-    cout << "Welcome to Simple Calculator V1.1!\n";
+    cout << "Welcome to Simple Calculator V3.1.1!\n";
   }
 
   cout << "Enter an equation:\n"; //Asks user to input 2 numbers
@@ -72,7 +73,7 @@ int main()
       main();
     }
     else if ( restart == "n" ) { //If the user wants to terminate the program, print a goodbye message and end the program.
-      cout << "OK, thank you for using Simple Calculator V3.1!\n";
+      cout << "OK, thank you for using Simple Calculator V3.1.1!\n";
       return 0;
     }
 
