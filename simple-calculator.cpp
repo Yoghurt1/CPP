@@ -7,6 +7,7 @@ Changelog
   V1.0 - Original program
   V2.0 - Added functionality for restarting the program if the user enters an invalid equation or if the user wants to enter another equation.
   V3.0 - Added cinCheck() function to check if the input for number1 and number2 was int only.
+  V3.1 - Added restart functionality at the end of the program.
 */
 
 #include <iostream>
@@ -59,8 +60,21 @@ int main()
     main(); //Restart main() function
   }
   else { //If bork is false
-    cout << "Answer to entered equation = " << answer << endl; //Prints the answer
+    cout << "Answer to entered equation = " << answer << "\nDo you want to restart the program? (y/n) "; //Prints the answer
+    cin >> restart;
   }
+
+    while ( restart != "y" && restart != "n") {
+      cout << "That input is invalid. Please try again.\nDo you want to restart the program? (y/n) ";
+      cin >> restart;
+    }
+    if ( restart == "y" ) { //If the user wants to restart the program
+      main();
+    }
+    else if ( restart == "n" ) { //If the user wants to terminate the program, print a goodbye message and end the program.
+      cout << "OK, thank you for using Simple Calculator V3.1!\n";
+      return 0;
+    }
 
   return 0; //End main() function
 }
